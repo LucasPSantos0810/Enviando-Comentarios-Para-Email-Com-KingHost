@@ -1,0 +1,36 @@
+<!DOCTYPE html public>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fale Conosco!</title>
+</head>
+
+<body>
+	<form action="http://formail.kinghost.net/formmail.cgi" method="POST"> <!-- este link da FormMail irá receber a mensagem do usuário e retornará para o seu email -->
+		<input type="hidden" name="recipient" value="emailquerecebe@exemplo.com"> <!-- email que irá receber as mensagens -->
+		<input type="hidden" name="redirect" value="https://www.seusite.com"> <!-- link que o usuário será redirecionado -->
+		<input type="hidden" name="subject" value="assuntoPadrao"> <!-- assunto que chegará no subject do seu email-->
+		<input type="hidden" name="email" value="email@seudominio.com"> <!-- email que representa o seu domínio, ele deve estar ligado diretamente como administrador do domínio -->
+		
+		<p>
+		Nome: <br />
+		<input type="text" size="30" name="nome" required></input>
+		</p>
+		
+		<p>
+		Email: <br />
+		<input type="text" size="30" name="replyto" required></input>
+		</p>
+		
+		<p>
+		Comentário: <br />
+		<textarea type="text" maxlength="500" name="comentario" required></textarea>
+		</p>
+		
+		<p>
+		<input type="submit" name="BTEnvia" value="Enviar">
+		<input type="reset" name="BTApaga" value="Apagar"> </p>
+	</form>
+		
+</body>
+</html>
